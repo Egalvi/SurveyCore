@@ -1,0 +1,63 @@
+<survey xmlns="https://www.egalvi.ru/survey"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="https://www.egalvi.ru/survey survey.xsd">
+	<name>Test name</name>
+	<questions>
+		<question>
+			<text>Question text</text>
+			<answer>
+				<scale name='scale1' value='+1' />
+				<scale name='scale2' value='+1' />
+				<scale name='scale3' value='+1' />
+				<text>Answer text</text>
+			</answer>
+			<answer>
+				<scale name='scale1' value='+1' />
+				<scale name='scale2' value='+1' />
+				<scale name='scale3' value='+1' />
+				<text>Answer text</text>
+			</answer>
+			<answer>
+				<scale name='scale1' value='+1' />
+				<scale name='scale2' value='+1' />
+				<scale name='scale3' value='+1' />
+				<text>Answer text</text>
+			</answer>
+		</question>
+		<question>
+			<text>Question text</text>
+			<answer>
+				<scale name='scale1' value='+1' />
+				<scale name='scale2' value='+1' />
+				<scale name='scale3' value='+1' />
+				<text>Answer text</text>
+			</answer>
+			<answer>
+				<scale name='scale1' value='+1' />
+				<scale name='scale2' value='+1' />
+				<scale name='scale3' value='+1' />
+				<text>Answer text</text>
+			</answer>
+			<answer>
+				<scale name='scale1' value='+1' />
+				<scale name='scale2' value='+1' />
+				<scale name='scale3' value='+1' />
+				<text>Answer text</text>
+			</answer>
+		</question>
+	</questions>
+	<keys>
+		<key>
+			<scale name='scale1' value='+1' />
+			<scale name='scale2' value='+1' />
+			<scale name='scale3' value='+1' />
+			<text>Answer text</text>
+		</key>
+		<key>
+			<scale name='scale1' value='+1' />
+			<scale name='scale2' value='+1' />
+			<scale name='scale3' value='+1' />
+			<text>Answer text</text>
+		</key>
+	</keys>
+</survey>
