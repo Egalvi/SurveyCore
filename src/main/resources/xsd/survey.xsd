@@ -36,14 +36,14 @@
     <xs:complexType name="answer">
         <xs:sequence>
             <xs:element name="scale" type="scale" maxOccurs="unbounded"/>
-            <xs:element name="text"/>
+            <xs:element name="text" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="key">
         <xs:sequence>
             <xs:element name="scale" type="scale" maxOccurs="unbounded"/>
-            <xs:element name="text"/>
+            <xs:element name="text" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
