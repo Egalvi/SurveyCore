@@ -35,10 +35,10 @@
                     <!-- The name of your generated source package -->
                     <!--<arguments>-extension -npa -b ${project.basedir}/src/main/resources/global.xjb</arguments>-->
                     <!-- The package of your generated sources -->
-                    <packageName>ru.egalvi.survey.model</packageName>
+                    <!--<packageName>ru.egalvi.survey.model</packageName>-->
                     <!-- Define the directory where we should find the DTD files -->
                     <sources>${project.basedir}/src/main/resources/xsd</sources>
-
+                    <xjbSources>${project.basedir}/src/main/resources/xjb</xjbSources>
                 </configuration>
             </plugin>
         </plugins>
