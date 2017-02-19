@@ -11,50 +11,45 @@
                 <xs:element name="questions">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="question" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="text" type="xs:string"/>
-                                        <xs:element name="answer" maxOccurs="unbounded">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="scale" maxOccurs="unbounded">
-                                                        <xs:complexType>
-                                                            <xs:attribute name="name" type="xs:string"/>
-                                                            <xs:attribute name="value" type="xs:integer"/>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                    <xs:element name="text"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
+                            <xs:element name="question" type="question" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="keys">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="key" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="scale" maxOccurs="unbounded">
-                                            <xs:complexType>
-                                                <xs:attribute name="name" type="xs:string"/>
-                                                <xs:attribute name="value" type="xs:integer"/>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="text"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
+                            <xs:element name="key" type="key" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:complexType name="question">
+        <xs:sequence>
+            <xs:element name="text" type="xs:string"/>
+            <xs:element name="answer" type="answer" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="answer">
+        <xs:sequence>
+            <xs:element name="scale" type="scale" maxOccurs="unbounded"/>
+            <xs:element name="text"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="key">
+        <xs:sequence>
+            <xs:element name="scale" type="scale" maxOccurs="unbounded"/>
+            <xs:element name="text"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="scale">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="value" type="xs:integer"/>
+    </xs:complexType>
 
 </xs:schema>
