@@ -51,13 +51,13 @@
 			<scale name='scale1' minValueInclusive='+1' maxValueExclusive="+5"/>
 			<scale name='scale2' value='+1' />
 			<scale name='scale3' value='+1' />
-			<text>Answer text</text>
+			<text>Answer text1</text>
 		</key>
 		<key>
-			<scale name='scale1' value='+1' />
-			<scale name='scale2' value='+1' />
-			<scale name='scale3' value='+1' />
-			<text>Answer text</text>
+			<scale name='scale1' value='+2' />
+			<scale name='scale2' value='+2' />
+			<scale name='scale3' value='+2' />
+			<text>Answer text2</text>
 		</key>
 	</keys>
 </survey>

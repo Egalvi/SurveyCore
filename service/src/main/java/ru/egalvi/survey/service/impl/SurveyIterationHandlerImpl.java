@@ -49,16 +49,22 @@ public class SurveyIterationHandlerImpl implements SurveyIterationHandler {
             }
         }
         for (Key k : survey.getKeys().getKey()) {
+            boolean matched = true;
             for (Keyscale s : k.getScale()) {
                 Scale scale = resultScales.get(s.getName());
-                if (s.getValue() != null && scale.getValue().equals(s.getValue())) {
-
-                } else if (s.getMinValueExclusive() != null && scale.getValue().compareTo(s.getMinValueExclusive()) > 0
-                        || s.getMinValueInclusive() != null && scale.getValue().compareTo(s.getMinValueInclusive()) >= 0
-                        || s.getMaxValueExclusive() != null && scale.getValue().compareTo(s.getMaxValueExclusive()) < 0
-                        || s.getMaxValueInclusive() != null && scale.getValue().compareTo(s.getMaxValueInclusive()) <= 0){
-
+                if (s.getValue() != null && !scale.getValue().equals(s.getValue())) {
+                    matched = false;
+                    break;
+                } else if (s.getValue() == null && !((s.getMinValueExclusive() != null && scale.getValue().compareTo(s.getMinValueExclusive()) > 0
+                        || s.getMinValueInclusive() != null && scale.getValue().compareTo(s.getMinValueInclusive()) >= 0)
+                        && (s.getMaxValueExclusive() != null && scale.getValue().compareTo(s.getMaxValueExclusive()) < 0
+                        || s.getMaxValueInclusive() != null && scale.getValue().compareTo(s.getMaxValueInclusive()) <= 0))) {
+                    matched = false;
+                    break;
                 }
+            }
+            if (matched) {
+                return k.getText();
             }
         }
         return null;

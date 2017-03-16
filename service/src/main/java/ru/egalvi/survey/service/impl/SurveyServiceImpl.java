@@ -10,15 +10,16 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class SurveyServiceImpl implements SurveyService {
     private final JAXBContext jc;
     private final Unmarshaller unmarshaller;
     private final Marshaller marshaller;
+    private final String fileName;
 
-    public SurveyServiceImpl() throws JAXBException {
+    public SurveyServiceImpl(String fileName) throws JAXBException {
+        this.fileName = fileName;
         jc = JAXBContext.newInstance(Survey.class);
         unmarshaller = jc.createUnmarshaller();
         marshaller = jc.createMarshaller();
@@ -44,6 +45,6 @@ public class SurveyServiceImpl implements SurveyService {
         return (Survey) unmarshaller.unmarshal(Thread.
                 currentThread().
                 getContextClassLoader().
-                getResourceAsStream("questions.xml"));
+                getResourceAsStream(fileName));
     }
 }
