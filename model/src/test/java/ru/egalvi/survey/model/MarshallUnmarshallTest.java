@@ -1,4 +1,4 @@
-package ru.egalvi.survey;
+package ru.egalvi.survey.model;
 
 import org.junit.Test;
 import ru.egalvi.survey.model.Survey;

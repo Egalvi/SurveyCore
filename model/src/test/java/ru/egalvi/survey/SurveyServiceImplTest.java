@@ -5,16 +5,17 @@ import ru.egalvi.survey.model.Survey;
 
 import static org.junit.Assert.*;
 
-public class SurveyServiceTest {
+public class SurveyServiceImplTest {
     @Test
     public void testCreate() throws Exception {
-        SurveyService service = new SurveyService();
+        SurveyServiceImpl service = new SurveyServiceImpl();
     }
 
     @Test
     public void name() throws Exception {
-        SurveyService service = new SurveyService();
+        SurveyService service = new SurveyServiceImpl();
         Survey survey = service.getSurvey();
         assertNotNull(survey);
     }
+
 }

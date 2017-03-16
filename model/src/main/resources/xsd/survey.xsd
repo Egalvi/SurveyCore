@@ -40,16 +40,25 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="scale">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="value" type="xs:integer"/>
+    </xs:complexType>
+
     <xs:complexType name="key">
         <xs:sequence>
-            <xs:element name="scale" type="scale" maxOccurs="unbounded"/>
+            <xs:element name="scale" type="keyscale" maxOccurs="unbounded"/>
             <xs:element name="text" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="scale">
+    <xs:complexType name="keyscale">
         <xs:attribute name="name" type="xs:string"/>
         <xs:attribute name="value" type="xs:integer"/>
+        <xs:attribute name="minValueExclusive" type="xs:integer"/>
+        <xs:attribute name="minValueInclusive" type="xs:integer"/>
+        <xs:attribute name="maxValueExclusive" type="xs:integer"/>
+        <xs:attribute name="maxValueInclusive" type="xs:integer"/>
     </xs:complexType>
 
 </xs:schema>
