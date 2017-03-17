@@ -304,66 +304,56 @@
 	</questions>
 	<keys>
 		<key>
-			<scale name='scale' minValueInclusive='+0' maxValueExclusive="+10"/>
+			<scale name='scale' minValueInclusive='+0' maxValueInclusive="+10"/>
 			<text>Ханжа.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+11' maxValueExclusive="+15"/>
-			<text>В вас сильно развито рациональное начало, вы очень требовательны к мужчинам (женщинам),
-				подозрительны, ревнивы.</text>
+			<scale name='scale' minValueInclusive='+11' maxValueInclusive="+15"/>
+			<text>В вас сильно развито рациональное начало, вы очень требовательны к мужчинам (женщинам), подозрительны, ревнивы.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+16' maxValueExclusive="+20"/>
+			<scale name='scale' minValueInclusive='+16' maxValueInclusive="+20"/>
 			<text>Вы невинны душой и телом, у вас нет друзей, которые бы оказали на вас развращающее действие.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+21' maxValueExclusive="+30"/>
+			<scale name='scale' minValueInclusive='+21' maxValueInclusive="+30"/>
 			<text>Вы либо старый человек, либо больны, а может, стараетесь казаться не тем, кто вы есть на самом деле.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+31' maxValueExclusive="+35"/>
+			<scale name='scale' minValueInclusive='+31' maxValueInclusive="+35"/>
 			<text>В вас прочные моральные устои, ваш идеал крепкая, дружная семья, основанная на любви.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+36' maxValueExclusive="+40"/>
-			<text>Вы не способны на безрассудство, случайные срывы очень мучат вас, вы созданы для семьи,
-				в любви стремитесь к прочности, к своему избраннику довольно требовательны.</text>
+			<scale name='scale' minValueInclusive='+36' maxValueInclusive="+40"/>
+			<text>Вы не способны на безрассудство, случайные срывы очень мучат вас, вы созданы для семьи, в любви стремитесь к прочности, к своему избраннику довольно требовательны.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+41' maxValueExclusive="+50"/>
-			<text>Вы — человек современных взглядов, не склонны осуждать кого-либо,
-				однако сами ведете довольно сдержанную половую жизнь.</text>
+			<scale name='scale' minValueInclusive='+41' maxValueInclusive="+50"/>
+			<text>Вы — человек современных взглядов, не склонны осуждать кого-либо, однако сами ведете довольно сдержанную половую жизнь.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+51' maxValueExclusive="+55"/>
-			<text>В вас много нерастраченной энергии, вы — молоды и стремитесь взять от жизни все и как можно больше,
-				секс для вас — органическая потребность. </text>
+			<scale name='scale' minValueInclusive='+51' maxValueInclusive="+55"/>
+			<text>В вас много нерастраченной энергии, вы — молоды и стремитесь взять от жизни все и как можно больше, секс для вас — органическая потребность. </text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+56' maxValueExclusive="+60"/>
-			<text>Вы — увлекающаяся натура, но вы способны на глубокое чувство,
-				неразделенная любовь может стать трагедией вашей жизни. </text>
+			<scale name='scale' minValueInclusive='+56' maxValueInclusive="+60"/>
+			<text>Вы — увлекающаяся натура, но вы способны на глубокое чувство, неразделенная любовь может стать трагедией вашей жизни. </text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+61' maxValueExclusive="+65"/>
-			<text>Вы мечтаете о необыкновенном(ой) мужчине (женщине), но размениваете себя на случайные встречи,
-				ваша личная жизнь не удовлетворяет вас, однако в вашем поведении виноваты лишь вы,
-				ибо возможность выбрать достойного спутника(цу) у вас есть.</text>
+			<scale name='scale' minValueInclusive='+61' maxValueInclusive="+65"/>
+			<text>Вы мечтаете о необыкновенном(ой) мужчине (женщине), но размениваете себя на случайные встречи, ваша личная жизнь не удовлетворяет вас, однако в вашем поведении виноваты лишь вы, ибо возможность выбрать достойного спутника(цу) у вас есть.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+66' maxValueExclusive="+70"/>
-			<text>В вашей жизни была большая любовь, окончившаяся крахом для ваших надежд, вы разочарованы,
-				ведете беспорядочную жизнь, впрочем, мужчины (женщины) вас любят.</text>
+			<scale name='scale' minValueInclusive='+66' maxValueInclusive="+70"/>
+			<text>В вашей жизни была большая любовь, окончившаяся крахом для ваших надежд, вы разочарованы, ведете беспорядочную жизнь, впрочем, мужчины (женщины) вас любят.</text>
 		</key>
 		<key>
-			<scale name='scale' minValueInclusive='+71' maxValueExclusive="+80"/>
-			<text>Вам кажется, что вы познали все, вы бравируете вашей разочарованностью в мужчине (женщине),
-				однако каждое ваше знакомство возрождает в вас надежду на счастье. </text>
+			<scale name='scale' minValueInclusive='+71' maxValueInclusive="+80"/>
+			<text>Вам кажется, что вы познали все, вы бравируете вашей разочарованностью в мужчине (женщине), однако каждое ваше знакомство возрождает в вас надежду на счастье. </text>
 		</key>
 		<key>
 			<scale name='scale' minValueInclusive='+81'/>
-			<text> Вы развратны, циничны, буйная молодость утомила вас. Ваш (а) мужчина (женщина) покинул (а) вас,
-				или вы бываете на грани развода, однако вы еще способны увлечься мужчиной (женщиной).</text>
+			<text> Вы развратны, циничны, буйная молодость утомила вас. Ваш (а) мужчина (женщина) покинул (а) вас, или вы бываете на грани развода, однако вы еще способны увлечься мужчиной (женщиной).</text>
 		</key>
 
 	</keys>
