@@ -7,7 +7,9 @@
     <groupId>ru.egalvi.survey</groupId>
     <artifactId>survey-core</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+    <!-- command to update version -->
+    <!-- mvn versions:set -DnewVersion=1.0 -->
 
     <modules>
         <module>model</module>
