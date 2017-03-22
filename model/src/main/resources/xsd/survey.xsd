@@ -36,7 +36,7 @@
 
     <xs:complexType name="scale">
         <xs:attribute name="name" type="xs:string"/>
-        <xs:attribute name="value" type="xs:integer"/>
+        <xs:attribute name="value" type="xs:int"/>
     </xs:complexType>
 
     <xs:complexType name="keys">
@@ -54,11 +54,11 @@
 
     <xs:complexType name="keyscale">
         <xs:attribute name="name" type="xs:string"/>
-        <xs:attribute name="value" type="xs:integer"/>
-        <xs:attribute name="minValueExclusive" type="xs:integer"/>
-        <xs:attribute name="minValueInclusive" type="xs:integer"/>
-        <xs:attribute name="maxValueExclusive" type="xs:integer"/>
-        <xs:attribute name="maxValueInclusive" type="xs:integer"/>
+        <xs:attribute name="value" type="xs:int"/>
+        <xs:attribute name="minValueExclusive" type="xs:int"/>
+        <xs:attribute name="minValueInclusive" type="xs:int"/>
+        <xs:attribute name="maxValueExclusive" type="xs:int"/>
+        <xs:attribute name="maxValueInclusive" type="xs:int"/>
     </xs:complexType>
 
 </xs:schema>

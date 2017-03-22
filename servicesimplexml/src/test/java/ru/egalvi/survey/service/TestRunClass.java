@@ -10,19 +10,19 @@ import java.util.List;
 public class TestRunClass {
     @org.junit.Test
     public void iterativeSurvey() throws Exception {
-//        SurveyService service = new SurveyServiceImpl("questions.xml");
-//        SurveyIterationHandler survey = service.getSurvey();
-//        while (survey.hasNestQuestion()) {
-//            Question question = survey.getNextQuestion();
-//            System.out.println(question.getText());
-//            List<Answer> answers = question.getAnswer();
-//            int i = 0;
-//            for (Answer a : answers) {
-//                System.out.println(++i + ". " + a.getText());
-//            }
-//            survey.setAnswer(answers.get(0));
-//        }
-//        System.out.println(survey.getResult());
-//        Assert.assertEquals("Answer text2", survey.getResult());
+        SurveyService service = new SurveyServiceImpl("questions.xml");
+        SurveyIterationHandler survey = service.getSurvey();
+        while (survey.hasNestQuestion()) {
+            Question question = survey.getNextQuestion();
+            System.out.println(question.getText());
+            List<Answer> answers = question.getAnswer();
+            int i = 0;
+            for (Answer a : answers) {
+                System.out.println(++i + ". " + a.getText());
+            }
+            survey.setAnswer(answers.get(0));
+        }
+        System.out.println(survey.getResult());
+        Assert.assertEquals("Answer text2", survey.getResult());
     }
 }

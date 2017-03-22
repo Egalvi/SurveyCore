@@ -1,16 +1,11 @@
 package ru.egalvi.survey.service.impl;
 
-
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 import ru.egalvi.survey.model.Survey;
 import ru.egalvi.survey.service.SurveyIterationHandler;
 import ru.egalvi.survey.service.SurveyService;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import java.util.ArrayList;
 import java.util.List;
 

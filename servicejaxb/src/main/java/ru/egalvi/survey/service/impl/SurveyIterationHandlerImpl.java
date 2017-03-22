@@ -43,7 +43,7 @@ public class SurveyIterationHandlerImpl implements SurveyIterationHandler {
                 scale.setValue(s.getValue());
                 Scale existent = resultScales.get(s.getName());
                 if (existent != null) {
-                    scale.setValue(scale.getValue().add(existent.getValue()));
+                    scale.setValue(scale.getValue() + existent.getValue());
                 }
                 resultScales.put(s.getName(), scale);
             }
