@@ -48,6 +48,13 @@ public class SurveyIterationHandlerImpl implements SurveyIterationHandler {
                 resultScales.put(s.getName(), scale);
             }
         }
+
+        System.out.println("Result: ");
+        for (Scale s :
+                resultScales.values()) {
+            System.out.print(s.getName() + ":::" + s.getValue().intValue() + " ");
+        }
+
         for (Key k : survey.getKeys().getKey()) {
             boolean matched = true;
             for (Keyscale s : k.getScale()) {

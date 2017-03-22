@@ -8,7 +8,7 @@
         Note that the schemaLocation path must point to the XSD file
         relative to *this* file, rather than the basedir.
     -->
-    <jxb:bindings schemaLocation="../xsd/survey.xsd">
+    <jxb:bindings schemaLocation="../../../../../src/main/resources/xsd/survey.xsd">
         <jxb:schemaBindings>
             <jxb:package name="ru.egalvi.survey.model"/>
         </jxb:schemaBindings>

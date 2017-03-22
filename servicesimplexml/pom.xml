@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service</artifactId>
+    <artifactId>service-simple-xml</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>ru.egalvi.survey</groupId>
@@ -18,10 +19,26 @@
         </dependency>
 
         <dependency>
+            <groupId>ru.egalvi.survey</groupId>
+            <artifactId>service</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.simpleframework</groupId>
+            <artifactId>simple-xml</artifactId>
+            <version>2.6.1</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>stax-api</artifactId>
+                    <groupId>stax</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
-
-
 </project>

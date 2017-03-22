@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service</artifactId>
+    <artifactId>service-jaxb</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>ru.egalvi.survey</groupId>
@@ -18,10 +19,14 @@
         </dependency>
 
         <dependency>
+            <groupId>ru.egalvi.survey</groupId>
+            <artifactId>service</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>

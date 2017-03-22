@@ -10,39 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>model</artifactId>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <!-- Plugin required to build java classes from XSD using XJC -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>2.3</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!-- The name of your generated source package -->
-                    <!--<arguments>-extension -npa -b ${project.basedir}/src/main/resources/global.xjb</arguments>-->
-                    <!-- The package of your generated sources -->
-                    <!--<packageName>ru.egalvi.ru.egalvi.survey.model</packageName>-->
-                    <!-- Define the directory where we should find the DTD files -->
-                    <sources>${project.basedir}/src/main/resources/xsd</sources>
-                    <xjbSources>${project.basedir}/src/main/resources/xjb</xjbSources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <packaging>pom</packaging>
+    <modules>
+        <module>jaxbmodel</module>
+        <module>simplexmlmodel</module>
+    </modules>
 </project>
