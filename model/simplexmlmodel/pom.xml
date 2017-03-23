@@ -33,7 +33,7 @@
                 <version>1.6.0</version>
                 <executions>
                     <execution>
-                        <phase>compile</phase>
+                        <phase>generate-sources</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
@@ -46,12 +46,12 @@
                     <arguments>
                         <argument>-jar</argument>
                         <argument>src/main/resources/android-jaxb-1.0.1.jar</argument>
-                        <argument>-dtarget/generated</argument>
+                        <!-- generated source directory by convention: target/genereted-sources/<tool> -->
+                        <argument>-dtarget/generated-sources/simplexml</argument>
                         <argument>-pru.egalvi.survey.model</argument>
                         <argument>../src/main/resources/xsd/survey.xsd</argument>
-                        <!--TODO make the diractory as generated sources root-->
-
                         <!--
+                        This is required for simplexml library:
                         manually add these to Survey.java
 
                             @Attribute(name = "schemaLocation")
@@ -60,6 +60,27 @@
                         -->
                     </arguments>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <!-- Adds genereted sources in this location to project sources to be compiled and packaged -->
+                                <source>${project.basedir}/target/generated-sources/simplexml</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>

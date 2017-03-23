@@ -1,13 +1,12 @@
 package ru.egalvi.survey.service.impl;
 
 import ru.egalvi.survey.model.*;
-import ru.egalvi.survey.service.SurveyIterationHandler;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class SurveyIterationHandlerImpl implements SurveyIterationHandler {
+public class SurveyIterationHandlerImpl {
 
     private final Survey survey;
     private Iterator<Question> questionIterator;

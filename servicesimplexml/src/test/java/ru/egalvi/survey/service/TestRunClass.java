@@ -3,6 +3,7 @@ package ru.egalvi.survey.service;
 import org.junit.Assert;
 import ru.egalvi.survey.model.Answer;
 import ru.egalvi.survey.model.Question;
+import ru.egalvi.survey.service.impl.SurveyIterationHandlerImpl;
 import ru.egalvi.survey.service.impl.SurveyServiceImpl;
 
 import java.util.List;
@@ -10,8 +11,8 @@ import java.util.List;
 public class TestRunClass {
     @org.junit.Test
     public void iterativeSurvey() throws Exception {
-        SurveyService service = new SurveyServiceImpl("questions.xml");
-        SurveyIterationHandler survey = service.getSurvey();
+        SurveyServiceImpl service = new SurveyServiceImpl("questions.xml");
+        SurveyIterationHandlerImpl survey = service.getSurvey();
         while (survey.hasNestQuestion()) {
             Question question = survey.getNextQuestion();
             System.out.println(question.getText());

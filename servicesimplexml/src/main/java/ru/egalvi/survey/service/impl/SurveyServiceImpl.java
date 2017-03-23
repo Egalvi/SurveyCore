@@ -3,18 +3,23 @@ package ru.egalvi.survey.service.impl;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 import ru.egalvi.survey.model.Survey;
-import ru.egalvi.survey.service.SurveyIterationHandler;
-import ru.egalvi.survey.service.SurveyService;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SurveyServiceImpl implements SurveyService {
+public class SurveyServiceImpl {
     private Serializer serializer;
-    private final String fileName;
+    private String fileName;
+    private InputStream surveyInputStream;
 
     public SurveyServiceImpl(String fileName) throws Exception {
         this.fileName = fileName;
+        serializer = new Persister();
+    }
+
+    public SurveyServiceImpl(InputStream surveyInputStream) throws Exception {
+        this.surveyInputStream = surveyInputStream;
         serializer = new Persister();
     }
 
@@ -30,12 +35,15 @@ public class SurveyServiceImpl implements SurveyService {
         return surveys;
     }
 
-    public SurveyIterationHandler getSurvey() throws Exception {
+    public SurveyIterationHandlerImpl getSurvey() throws Exception {
         return new SurveyIterationHandlerImpl(getSurveyInner());
     }
 
     private Survey getSurveyInner() throws Exception {
-        return (Survey) serializer.read(Survey.class, Thread.
+        if (surveyInputStream != null) {
+            return serializer.read(Survey.class, surveyInputStream);
+        }
+        return serializer.read(Survey.class, Thread.
                 currentThread().
                 getContextClassLoader().
                 getResourceAsStream(fileName));

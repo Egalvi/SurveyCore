@@ -18,11 +18,11 @@
             <version>1.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>ru.egalvi.survey</groupId>
-            <artifactId>service</artifactId>
-            <version>1.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>ru.egalvi.survey</groupId>-->
+            <!--<artifactId>service</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>junit</groupId>

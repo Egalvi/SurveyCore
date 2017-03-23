@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            targetNamespace="https://www.egalvi.ru/survey"
            xmlns="https://www.egalvi.ru/survey"
            elementFormDefault="qualified">
@@ -9,8 +10,10 @@
             <xs:sequence>
                 <xs:element name="name" type="xs:string"/>
                 <xs:element name="questions" type="questions"/>
-                <xs:element name="keys" type="keys" />
+                <xs:element name="keys" type="keys"/>
             </xs:sequence>
+            <!-- This attribute is required for simple-xml correct work -->
+            <xs:attribute name="schemaLocation" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
